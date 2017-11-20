@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		659025CF1FC32D84002E28AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659025CE1FC32D84002E28AF /* AppDelegate.swift */; };
-		659025D11FC32D84002E28AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659025D01FC32D84002E28AF /* ViewController.swift */; };
+		659025D11FC32D84002E28AF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659025D01FC32D84002E28AF /* MainViewController.swift */; };
 		659025D41FC32D84002E28AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659025D21FC32D84002E28AF /* Main.storyboard */; };
 		659025D61FC32D84002E28AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659025D51FC32D84002E28AF /* Assets.xcassets */; };
 		659025D91FC32D84002E28AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659025D71FC32D84002E28AF /* LaunchScreen.storyboard */; };
+		659025E31FC330B4002E28AF /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659025E21FC330B4002E28AF /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		659025CB1FC32D84002E28AF /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		659025CE1FC32D84002E28AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		659025D01FC32D84002E28AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		659025D01FC32D84002E28AF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		659025D31FC32D84002E28AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		659025D51FC32D84002E28AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		659025D81FC32D84002E28AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659025DA1FC32D84002E28AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		659025E21FC330B4002E28AF /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		659025CD1FC32D84002E28AF /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				659025E11FC33071002E28AF /* View */,
+				659025E01FC32ED0002E28AF /* Controller */,
 				659025CE1FC32D84002E28AF /* AppDelegate.swift */,
-				659025D01FC32D84002E28AF /* ViewController.swift */,
 				659025D21FC32D84002E28AF /* Main.storyboard */,
 				659025D51FC32D84002E28AF /* Assets.xcassets */,
 				659025D71FC32D84002E28AF /* LaunchScreen.storyboard */,
 				659025DA1FC32D84002E28AF /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		659025E01FC32ED0002E28AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				659025D01FC32D84002E28AF /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		659025E11FC33071002E28AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				659025E21FC330B4002E28AF /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +155,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659025D11FC32D84002E28AF /* ViewController.swift in Sources */,
+				659025E31FC330B4002E28AF /* CurrencyTextField.swift in Sources */,
+				659025D11FC32D84002E28AF /* MainViewController.swift in Sources */,
 				659025CF1FC32D84002E28AF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.jlaaksov.window-shopper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.jlaaksov.window-shopper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
